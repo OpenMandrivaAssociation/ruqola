@@ -85,7 +85,7 @@ BuildArch:     noarch
 %files -f %{name}.lang
 %license LICENSES/*
 %doc README.md
-%{bindir}/ruqola
+%{_bindir}/ruqola
 %{_datadir}/applications/org.kde.ruqola.desktop
 %{_datadir}/icons/hicolor/*/apps/ruqola.png
 %{_datadir}/knotifications6/ruqola.notifyrc
@@ -94,7 +94,7 @@ BuildArch:     noarch
 %{_libdir}/{librocketchatrestapi-qt,libruqolacore,libruqolawidgets}.so.%{version}
 %{_libdir}/{librocketchatrestapi-qt,libruqolacore,libruqolawidgets}.so.0
 %{_metainfodir}/org.kde.ruqola.appdata.xml
-%{_qtplugindir}/ruqolaplugins/
+#{_qtplugindir}/ruqolaplugins/
 %{_libdir}/libcmark-rc-copy.so.*
 
 %files doc
